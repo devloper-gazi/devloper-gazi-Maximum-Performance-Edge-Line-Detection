@@ -30,3 +30,6 @@ First, you need to assemble and link the Assembly code. You can do this with `na
 1. Install **NASM** if you haven't already:
    ```bash
    sudo apt install nasm
+   nasm -f elf64 edge_detection_hough.asm -o edge_detection_hough.o
+   ld edge_detection_hough.o -o edge_detection_hough
+   ./edge_detection_hough
